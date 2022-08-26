@@ -1,0 +1,95 @@
+@font-face {
+	font-family: Russo One;
+	src: url('../fonts/RussoOne.ttf');
+}
+
+.menu {
+	font-family: Russo One;
+	font-weight: lighter;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 85%;
+
+	border-radius: 4px;
+	overflow: auto;
+}
+
+.menu button {
+	font-family: Russo One;
+	font-weight: lighter;
+
+	color: #fff;
+	background: #000000c7;
+
+	width: 120px;
+	height: 28px;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
+	outline: 0;
+
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out;
+}
+
+.menu button:hover {
+	color: #e83625;
+	border: 1px solid #e83625;
+}
+
+.menu > table {
+	border: 0px solid transparent;
+	border-spacing: 0px 0px;
+	min-width: 850px;
+}
+
+.menu > table > thead {
+	background: #000000c7;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+.menu td {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid red;
+	color: #fff;
+}
+
+.menu tbody tr:nth-child(even) {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.menu tbody tr:nth-child(odd) {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #191C25;
+	border-radius: 0 4px 4px 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #d3d3d3;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d3d3d3; 
+}
+

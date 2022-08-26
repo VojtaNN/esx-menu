@@ -1,0 +1,140 @@
+
+
+.menu {
+	font-family: 'Russo One', sans-serif;
+	min-width: 400px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, .384);
+	position: absolute;
+}
+
+.menu.body {
+	width: 600px;
+	height: 200px;
+	background-color: rgb(0, 0, 0, 40%);
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%)
+}
+
+.menu.align-top-left {
+	right: 40;
+	bottom: 40
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 80;
+	transform: translate(-50%, 0)
+}
+
+.menu.align-top-right {
+	right: 80;
+	top: 120
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%)
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0)
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40
+}
+
+.menu.align-center {
+	left: 60%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.menu .head {
+	background-color: rgb(0, 0, 0, 0);
+	border-style: solid;
+	text-align: center;
+	text-shadow: 4px 1px rgba(0, 0, 0, .411);
+	font-size: 25px;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: -5px
+}
+
+.menu .menu-items {
+	max-height: 600px;
+	overflow-y: auto
+}
+
+.menu .menu-back {
+	max-height: 600px;
+	background-color: rgb(0, 0, 0, .5);
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+	border-bottom: 3px solid rgb(255, 255, 255);
+	border-top: 3px solid rgb(255, 255, 255);
+}
+
+.menu .menu-items .menu-item {
+	height: 40px;
+	display: block;
+	background-color: #00000000;
+	line-height: 40px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.menu-items {
+	margin-top: -5px
+}
+
+.menu .menu-items .menu-item.selected {
+	background-color: rgba(0, 0, 0, .514);
+	border-left: 2px solid rgb(255, 255, 255);
+	animation-name: test;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes test {
+	0%   {border-left-color:rgb(128, 0, 128); left:0px; top:0px;}
+	25%  {border-left-color:black; left:200px; top:0px;}
+	50%  {border-left-color:rgb(128, 0, 128); left:200px; top:200px;}
+	75%  {border-left-color:black; left:0px; top:200px;}
+	100% {border-left-color:rgb(128, 0, 128); left:0px; top:0px;}
+  }
+  
+
+::-webkit-scrollbar {
+	width: 2px
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 4px #ffffff
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(255, 255, 255)
+}

@@ -1,0 +1,125 @@
+@font-face {
+	font-family: Russo One;
+	src: url('../fonts/RussoOne.ttf');
+}
+
+#controls {
+	font-size: 3em;
+	color: #FFF;
+	position: absolute;
+	bottom: 40;
+	right: 40;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	position: absolute;
+	overflow: hidden;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 85px;
+	border: black solid 2px;
+	text-align: center;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.head {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: #00e1ff;
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .head {
+	background: #000000;
+	text-align: center;
+	height: 40px;
+}
+
+.dialog .head span::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"] {
+	width: 100%;
+	height: 35px;
+	outline: 0;
+	background: #000000c4;
+	border-bottom: purple solid 1px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+
+	text-align: left;
+	padding: 15px;
+	transition: all 0.2s ease-in-out;
+	color: white;
+}
+
+.dialog input[type="text"]:active, .dialog input[type="text"]:hover {
+	color: white;
+}
+
+.dialog textarea {
+	width: 100%;
+	height: 130px;
+}
+
+.dialog button[name="submit"], .dialog button[name="cancel"]  {
+	position: relative;
+	top: 10px;
+	width: 100px;
+	height: 30px;
+	font-weight: 300;
+	color: white;
+	background: #000000c7;
+	border-radius: 4px;
+	text-transform: uppercase;
+	outline: 0;
+	border: 0;
+	margin: 0;
+	transition: all 0.1s ease-in-out;
+}
+
+.dialog button[name="submit"] {
+	right: 5px;
+}
+.dialog button[name="cancel"] {
+	left: 5px;
+}
+
+
+
+.dialog button[name="cancel"]:hover {
+	color: #ff1500;
+	border: 1.2px solid #ff1500;
+}
+
+.dialog button[name="submit"]:hover {
+	color: #ff1500;
+	border: 1.2px solid #ff1500;
+}
+
+.head::before,
+.head::after {
+	content: "";
+	flex-grow: 1;
+	background: #00e1ff;
+	height: 2px;
+	margin: 0px 3px;
+}
